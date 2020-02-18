@@ -52,10 +52,10 @@ conda config --set channel_priority strict
 cd .../geopandas-tutorial/
 # creating the environment
 conda env create --name geo-tutorial --file environment.yml
-# make the environment available in the JupyterLab
-python -m ipykernel install --user --name=geo-tutorial
 # activating the environment
 conda activate geo-tutorial
+# run the Jupyter Lab
+jupyter lab
 ```
 
 For this, you need to already download the materials first (see below), as it
